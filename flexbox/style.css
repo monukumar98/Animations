@@ -1,0 +1,30 @@
+.container{
+    width: 70%;
+    height: 700px;
+    background-color: coral;
+    display: flex;
+    flex-wrap: wrap; 
+    /* flex-wrap: wrap-reverse; */
+    flex-direction: column;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+
+    /* align-items: stretch; */
+    /* align-content: flex-end; */
+    align-items: center;
+}
+/* .one{
+    order: -1;
+} */
+div{
+    height: 30px;
+    width: 30px;
+    background-color: skyblue;
+    margin: 10px;
+}

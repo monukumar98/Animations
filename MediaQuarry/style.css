@@ -1,0 +1,26 @@
+.bigger{
+    background-color: yellow;
+    padding: 10px;
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+}
+.small{
+    background-color: green;
+    width: 33.33%;
+    font-size: 40px;
+    color: white;
+    /* display: flex; */
+}
+@media only screen and (max-width : 675px ){
+    .small{
+        background-color: red;
+        width: 100%;
+        font-size: 40px;
+        color: white;
+        display: block;   
+ }
+ .bigger{
+     display: block;
+ }
+}

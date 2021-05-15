@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bigger">
+    <!-- <div class="bigger">
         <div class="small">
             Rohit
         </div>
@@ -18,7 +18,66 @@
         <div class="small">
             Robin
         </div>
-    </div>
+    </div> -->
+<pre>
+    <code>
+import java.util.Scanner;
+public class Main{
+   static Scanner scn=new Scanner(System.in);
+    public static void main(String[] args) {
+
+     
+		char ch;
+		do {
+
+			ch = scn.next().charAt(0);  // Use cin in case of c++
+			if (ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%') {
+
+				operation(ch);
+
+			} else {
+				if (ch != 'x' && ch != 'X')
+					System.out.println("Invalid operation. Try again.");
+			}
+
+		} while (ch != 'x' && ch != 'X');
+	}
+
+	public static void operation(char ch) {
+		long a = scn.nextLong(); // Use cin in case of c++
+		long b = scn.nextLong(); // Use cin in case of c++
+		long res = 0;
+		switch (ch) {
+		case '+': {
+			res = a + b;
+
+			break;
+		}
+		case '-': {
+			res = a - b;
+
+			break;
+		}
+		case '*': {
+			res = a * b;
+
+			break;
+		}
+		case '/': {
+			res = a / b;
+			break;
+		}
+		case '%': {
+			res = a % b;
+			break;
+		}
+		}
+		System.out.println(res);
+
+	}
+}
+</code>
+</pre>
 
 </body>
 </html>
